@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pedido de eliminação de conta e dados associados à aplicação Innovation Week</h1>
+        <p>Este pedido está associado à eliminação de todos os dados associados à conta submetida na aplicação da
+            Innovation Week. Para procedermos à eliminação precisamos apenas que introduza o seu nome e email associados
+            à conta em questão e uma breve descrição da razão pela qual está a fazer este pedido. Caso submeta este
+            pedido, iremos eliminar todos os dados associados ao seu nome e email. Para mais esclarecimentos contactar
+            projetos@innova.pt.</p>
+        <form action="mailto:projetos@innova.pt?Subject=[NÃO EDITAR] Pedido de eliminação de dados App Innovation Week" method="post">
+            <input type="text" name="name" placeholder="O teu nome" required>
+            <input type="text" name="email" placeholder="O teu e-mail" required>
+            <textarea name="message" placeholder="A tua menssagem" rows="5" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>
